@@ -1,0 +1,37 @@
+.content {
+    margin: 24px 0 calc(2 * var(--ktl-grid-gutter));
+    max-width: 724px;
+}
+
+.text {
+    margin-top: 48px;
+}
+
+.image {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin: calc(2 * var(--ktl-grid-gutter)) 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .content {
+        margin: 96px 710px 108px 0;
+        max-width: none;
+    }
+
+    .banner {
+        position: relative;
+    }
+
+    .image {
+        position: absolute;
+        display: block;
+        width: 723px;
+        right: 0;
+        top: -64px;
+    }
+}
